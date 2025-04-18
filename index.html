@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesionální Malířské Služby</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Tomáš Kotzian - Malířství & Natěračství</div>
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul>
+                <li><a href="#sluzby"><i class="fas fa-paint-roller"></i> Služby</a></li>
+                <li><a href="#reference"><i class="fas fa-images"></i> Reference</a></li>
+                <li><a href="#kontakt"><i class="fas fa-envelope"></i> Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="video-background">
+                <video autoplay muted loop playsinline>
+                    <source src="6473944-uhd_3840_2160_25fps.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="hero-content">
+                <h1>Profesionální Malířské Služby</h1>
+                <p>Kvalitní malířské a natěračské práce pro váš domov i firmu</p>
+                <button class="cta-button">Objednat konzultaci</button>
+            </div>
+        </section>
+
+        <section id="sluzby" class="services">
+            <h2>Naše Služby</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Malířské práce</h3>
+                    <p>Profesionální malování interiérů a exteriérů</p>
+                </div>
+                <div class="service-card">
+                    <h3>Natěračské práce</h3>
+                    <p>Ošetření a nátěry dřevěných povrchů</p>
+                </div>
+                <div class="service-card">
+                    <h3>Tapetování</h3>
+                    <p>Nalepování tapet a dekorativních prvků</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reference" class="references">
+            <h2>Reference</h2>
+            <div class="gallery">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="Galery/001 - pXLmSQU.jpg" alt="Reference 1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Galery/002 - YZVwzOK.jpg" alt="Reference 2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Galery/003 - N0gVFb8.jpg" alt="Reference 3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Galery/004 - uaSGmiS.jpg" alt="Reference 4">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Galery/005 - gDI2Oot.png" alt="Reference 5">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Galery/006 - 8hOk46X.jpg" alt="Reference 6">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Galery/007 - lO6yk27.jpg" alt="Reference 7">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Galery/008 - c3S4fyQ.jpg" alt="Reference 8">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Galery/009 - 1CCIap6.jpg" alt="Reference 9">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Galery/010 - eHWcsrg.jpg" alt="Reference 10">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Galery/011 - Zx0ObWk.jpg" alt="Reference 11">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Galery/012 - waQxQXn.jpg" alt="Reference 12">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Galery/013 - BemUE4p.jpg" alt="Reference 13">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Galery/014 - ntQbgSS.jpg" alt="Reference 14">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Galery/015 - J0j6cGG.jpg" alt="Reference 15">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Galery/016 - dOqMP3i.jpg" alt="Reference 16">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Galery/017 - Tdoo1RQ.jpg" alt="Reference 17">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Galery/018 - hnxqnAf.jpg" alt="Reference 18">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontakt" class="contact">
+            <h2>Kontaktujte nás</h2>
+            <form class="contact-form" action="https://formsubmit.co/cheondervara@me.com" method="POST">
+                <!-- Honeypot pro ochranu proti spamu -->
+                <input type="text" name="_honey" style="display: none">
+                <!-- Zakázání captcha -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- Přesměrování po odeslání -->
+                <input type="hidden" name="_next" value="https://vasestranka.cz/dekujeme.html">
+
+                <input type="text" name="name" placeholder="Vaše jméno" required>
+                <input type="email" name="email" placeholder="Váš email" required>
+                <input type="tel" name="phone" placeholder="Váš telefon" required>
+                <textarea name="message" placeholder="Vaše zpráva" required></textarea>
+                <button type="submit">Odeslat</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Malířství & Natěračství. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
