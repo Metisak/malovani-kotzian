@@ -1,8 +1,33 @@
 // Vlastní kurzor
 const cursor = document.createElement('div');
-cursor.classList.add('custom-cursor');
+cursor.className = 'custom-cursor';
 document.body.appendChild(cursor);
 
+// Efekt pro kurzor při najetí na odkaz
+const links = document.querySelectorAll('a, button, .service-card');
+links.forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        cursor.classList.add('cursor-hover');
+        // Přidáme efekt "pulzování" pro kurzor
+        cursor.style.transform = 'scale(1.5)';
+        cursor.style.transition = 'transform 0.3s ease';
+    });
+
+    link.addEventListener('mouseleave', () => {
+        cursor.classList.remove('cursor-hover');
+        cursor.style.transform = 'scale(1)';
+    });
+
+    link.addEventListener('click', () => {
+        // Efekt "exploze" při kliknutí
+        cursor.classList.add('cursor-click');
+        setTimeout(() => {
+            cursor.classList.remove('cursor-click');
+        }, 300);
+    });
+});
+
+// Sledování pohybu myši
 document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.clientX + 'px';
     cursor.style.top = e.clientY + 'px';
